@@ -38,6 +38,9 @@ This backend service powers a journal web application where users can securely m
 
 - ✅ **Efficient Codebase**  
   - Reduced boilerplate code using Lombok.
+ 
+    **This is PostMan Endpoint File Structure For My Testing**
+![image](https://github.com/user-attachments/assets/fcec1969-4c26-4da7-b3eb-ea5b6fafa858)
 
 ---
 
