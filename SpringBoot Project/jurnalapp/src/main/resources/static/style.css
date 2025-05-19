@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+#entry-list {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.entry-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entry-item h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.entry-item .date {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.entry-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+    border-radius: 4px;
+}
+
+.entry-actions button.delete {
+    border-color: #d9534f;
+    background-color: #d9534f;
+}
+
+#create-entry-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#create-entry-form input[type="text"],
+#create-entry-form textarea,
+#edit-entry-form input[type="text"],
+#edit-entry-form textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#create-entry-form button[type="submit"],
+#edit-entry-form button[type="submit"],
+#single-entry-view button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#edit-entry-form button#cancel-edit {
+    border-color: #6c757d;
+    background-color: #6c757d;
+}
+
+#single-entry-view {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>My Journal Entries</h1>
+
+    <div id="entry-list">
+        <p>Loading entries...</p>
+    </div>
+
+    <h2>Create New Entry</h2>
+    <form id="create-entry-form">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="5" required></textarea>
+        </div>
+        <button type="submit">Save Entry</button>
+        <div id="create-error-message" class="error-message"></div>
+    </form>
+
+    <div id="single-entry-view" style="display: none;">
+        <h2>Journal Entry</h2>
+        <h3 id="view-title"></h3>
+        <p id="view-date"></p>
+        <p id="view-content"></p>
+        <button id="close-view">Close</button>
+
+        <h3>Edit Entry</h3>
+        <form id="edit-entry-form" style="display: none;">
+            <input type="hidden" id="edit-id">
+            <div>
+                <label for="edit-title">Title:</label>
+                <input type="text" id="edit-title" name="edit-title" required>
+            </div>
+            <div>
+                <label for="edit-content">Content:</label>
+                <textarea id="edit-content" name="edit-content" rows="5" required></textarea>
+            </div>
+            <button type="submit">Update Entry</button>
+            <button type="button" id="cancel-edit">Cancel</button>
+            <div id="edit-error-message" class="error-message"></div>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
